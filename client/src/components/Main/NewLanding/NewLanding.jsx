@@ -79,7 +79,7 @@ function NewLanding() {
   };
 
   return (
-    <div id="box">
+    <div id="formulario">
       <form className="formNew" onSubmit={handleSubmit(onSubmit) }>
         <div>
           <h1>Crea tu Landing</h1>

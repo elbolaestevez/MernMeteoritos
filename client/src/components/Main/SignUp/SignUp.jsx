@@ -35,32 +35,35 @@ function SignUp() {
   };
 
   return (
-    <div id="Form">
+    <div className="divnewlanding">
       
-      <form className="formLogin" onSubmit={handleSubmit(onSubmit) }>
-        <div>
-          <h1>Crea tu Usuario</h1>
-          <label>Name</label>
-          <input {...register("username", { minLength: 3 })} />
-          {errors.name && <p>{errors.name}</p>}
-        </div>
-
-        <div>
-          <label>Password</label>
-          <input type="password" {...register("password")} />
-          {errors.password && <p>{errors.password.message}</p>}
-        </div>
-    
-   
+  
       
+    <form className="formnewlanding" onSubmit={handleSubmit(onSubmit) }>
+      
+        <h1>Crea tu Usuario</h1>
         
-        <input type="submit" />
-      </form>
-      <Login/>
+        <input placeholder="Name"{...register("username", { minLength: 3 })} />
+        {errors.name && <p>{errors.name}</p>}
       
-    </div>
+
+      
+       
+        <input placeholder="password" type="password" {...register("password")} />
+        {errors.password && <p>{errors.password.message}</p>}
     
+  
+ 
     
-  );
+      
+      <input type="submit" />
+    </form>
+    <Login/>
+   
+    
+  </div>
+  
+  
+);
 }
 export default SignUp;
