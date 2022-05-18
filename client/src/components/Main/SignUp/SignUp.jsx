@@ -39,7 +39,7 @@ function SignUp() {
       
   
       
-    <form className="formnewlanding" onSubmit={handleSubmit(onSubmit) }>
+    <form className="boxsearch" onSubmit={handleSubmit(onSubmit) }>
       
         <h1>Crea tu Usuario</h1>
         

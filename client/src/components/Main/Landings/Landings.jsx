@@ -143,7 +143,7 @@ if(datamass){
 return(
 <>
 
-        <form className="row" onSubmit={onSubmit}>
+        <form className="boxsearch" onSubmit={onSubmit}>
           <input placeholder="Buscar Masa" name="nombre" />
           <input placeholder="Buscar Clase" name="nombreclase" />
           <label for="quantity">Seleccione la masa minima</label>

@@ -50,9 +50,9 @@ function Login() {
   ;}
 
   return (
-    <div className="divnewlanding">
+    <div className="boxsearch">
       
-    <form className="formnewlanding" onSubmit={handleSubmit(onSubmit) }>
+    <form className="boxsearch" onSubmit={handleSubmit(onSubmit) }>
       
         <h1>Loguea tu Usuario</h1>
         
