@@ -32,7 +32,7 @@ function Login() {
     
     
     try {
-  const res = await axios.post(`http://localhost:5000/api/astronomy/user/login`,data);
+  const res = await axios.post(`/api/astronomy/user/login`,data);
    if (res.status === 200) {
   
     console.log(res);
