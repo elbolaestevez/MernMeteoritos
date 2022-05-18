@@ -79,57 +79,58 @@ function NewLanding() {
   };
 
   return (
-    <div id="formulario">
-      <form className="formNew" onSubmit={handleSubmit(onSubmit) }>
-        <div>
-          <h1>Crea tu Landing</h1>
-          <label>Name</label>
-          <input {...register("name", { minLength: 3 })} />
-          {errors.name && <p>{errors.name}</p>}
-        </div>
-
-        <div>
-          <label>id</label>
-          <input type="number" {...register("id", { valueAsNumber: true })} />
-          {errors.id && <p>{errors.id.message}</p>}
-        </div>
-        <div>
-          
-          <label>Class</label>
-          <input {...register("recclass", { minLength: 3 })} />
-          {errors.recclass&& <p>{errors.recclass.message}</p>}
-        </div>
-        <div>
-          <label>Mass</label>
-          <input type="mass" {...register("mass", { valueAsNumber: true })} />
-          {errors.mass && <p>{errors.mass.message}</p>}
-        </div>
-        <div>
-          
-          <label>State</label>
-          <input {...register("fall", { minLength: 3 })} />
-          {errors.fall && <p>{errors.fall.message}</p>}
-        </div>
-        <div>
-          <label>Year</label>
-          <input type="date" {...register("year")} />
-          {errors.date && <p>{errors.date.message}</p>}
-        </div>
-        <div>
-          <label>latitude</label>
-          <input type="number" {...register("reclat", { valueAsNumber: true })} />
-          {errors.reclat && <p>{errors.reclat.message}</p>}
-        </div>
-        <div>
-          <label>longitude</label>
-          <input type="number" {...register("reclong", { valueAsNumber: true })} />
-          {errors.reclong && <p>{errors.reclong.message}</p>}
-        </div>
+    <div className="divnewlanding">
+    <h1>Crea tu Landing</h1>
+   <form className="formnewlanding" onSubmit={handleSubmit(onSubmit) }>
+     
       
-        
-        <input type="submit" />
-      </form>
-    </div>
-  );
+       
+       <input placeholder="Pon el nombre"{...register("name", { minLength: 3 })} />
+       {errors.name && <p>{errors.name}</p>}
+     
+
+     
+      
+       <input placeholder="pon el id" type="number" {...register("id", { valueAsNumber: true })} />
+       {errors.id && <p>{errors.id.message}</p>}
+     
+     
+       
+       
+       <input placeholder="pon la clase" {...register("recclass", { minLength: 3 })} />
+       {errors.recclass&& <p>{errors.recclass.message}</p>}
+     
+     
+       
+       <input placeholder="pon la Masa" {...register("mass" )} />
+
+     
+     
+       
+       
+       <input placeholder="pon el State"{...register("fall", { minLength: 3 })} />
+       {errors.fall && <p>{errors.fall.message}</p>}
+     
+     
+      
+       <input type="date" {...register("year")} />
+       {errors.date && <p>{errors.date.message}</p>}
+     
+     
+      
+       <input placeholder="pon la latitude" type="number" {...register("reclat", { valueAsNumber: true })} />
+       {errors.reclat && <p>{errors.reclat.message}</p>}
+     
+     
+     
+       <input placeholder="pon la longitud"type="number" {...register("reclong", { valueAsNumber: true })} />
+       {errors.reclong && <p>{errors.reclong.message}</p>}
+     
+   
+     
+     <input type="submit" />
+   </form>
+ </div>
+);
 }
 export default NewLanding;
